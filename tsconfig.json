@@ -1,0 +1,19 @@
+{
+	"compileOnSave": true,
+	"typeAcquisition": {
+		"enable": true
+	},
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ESNext",
+		"sourceMap": true,
+		"outDir": "/dist",
+		"rootDir": "/src",
+		"pretty": true,
+		"watch": true,
+		"declaration": true
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

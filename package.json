@@ -1,0 +1,19 @@
+{
+  "name": "tasty-treats-inquiry-form",
+  "version": "1.0.0",
+  "description": "An inquiry form for Tasty Treats, a local bakery",
+  "main": "dist/root.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daryl-cecile/Tasty-Treats-Inquiry-Form.git"
+  },
+  "author": "Daryl Cecile <darylcecile@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/daryl-cecile/Tasty-Treats-Inquiry-Form/issues"
+  },
+  "homepage": "https://github.com/daryl-cecile/Tasty-Treats-Inquiry-Form#readme"
+}
