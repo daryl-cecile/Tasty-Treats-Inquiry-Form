@@ -1,0 +1,320 @@
+form.ui-form {
+  width: 100%;
+  position: relative;
+}
+form.ui-form .form-input {
+  margin-bottom: 1.5rem;
+}
+form.ui-form .form-input label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  color: #333333;
+}
+form.ui-form .form-input input[type=text],
+form.ui-form .form-input input[type=email],
+form.ui-form .form-input textarea {
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  background: #f1f2f5;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 0.4rem 0.75rem;
+  color: #444343;
+  border: 0.05rem solid #e7e7ed;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.3s ease-in-out, opacity 0.15s ease-in-out;
+}
+form.ui-form .form-input input[type=text]:focus,
+form.ui-form .form-input input[type=email]:focus,
+form.ui-form .form-input textarea:focus {
+  border-color: #69bcf3;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(105, 188, 243, 0.75);
+}
+form.ui-form .form-input input[type=text][readonly]:focus,
+form.ui-form .form-input input[type=email][readonly]:focus,
+form.ui-form .form-input textarea[readonly]:focus {
+  border-color: gainsboro;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(220, 220, 220, 0.75);
+}
+form.ui-form .form-input input[type=text]:focus:invalid,
+form.ui-form .form-input input[type=email]:focus:invalid,
+form.ui-form .form-input textarea:focus:invalid {
+  border-color: #ffc71e;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(255, 199, 30, 0.75);
+}
+form.ui-form .form-input input[type=text]:focus:placeholder-shown,
+form.ui-form .form-input input[type=email]:focus:placeholder-shown,
+form.ui-form .form-input textarea:focus:placeholder-shown {
+  border-color: #ff5050;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(255, 80, 80, 0.75);
+}
+form.ui-form .form-input textarea {
+  height: 100px;
+  resize: vertical;
+}
+form.ui-form .form-footer {
+  display: block;
+}
+form.ui-form .form-footer .form-footer-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+form.ui-form .form-footer .form-footer-item .form-button {
+  -webkit-appearance: none;
+  display: block;
+  height: 2.5rem;
+  line-height: 1.5;
+  width: 150px;
+  font-size: 1rem;
+  background: #69bcf3;
+  color: #fff;
+  cursor: pointer;
+  border: 0.05rem solid #69bcf3;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.3s ease-in-out, opacity 0.15s ease-in-out;
+}
+form.ui-form .form-footer .form-footer-item .form-button:hover {
+  border-color: #69bcf3;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(105, 188, 243, 0.75);
+}
+form.ui-form .form-footer .form-footer-item .form-button:active {
+  opacity: 0.8;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1px;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+}
+main.centered {
+  max-width: 640px;
+  min-width: 350px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  min-height: 82vh;
+}
+main.centered.wider {
+  max-width: 860px;
+}
+main.centered h2.title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+.t-center {
+  text-align: center;
+}
+footer {
+  color: #fff;
+  background: gray;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+a {
+  color: #69bcf3;
+}
+a:not(.unstyled) {
+  padding: 0.2rem 0.5rem;
+  border: 0.05rem solid transparent;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.3s ease-in-out, opacity 0.15s ease-in-out;
+}
+a:not(.unstyled):hover {
+  border-color: #69bcf3;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(105, 188, 243, 0.75);
+}
+a.unstyled {
+  text-decoration: none;
+}
+table.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table.table tr:hover {
+  background-color: #ddd;
+}
+table.table tr td {
+  padding: 0 6px;
+}
+table.table tr th {
+  background-color: #69bcf3;
+  color: white;
+  padding: 8px 6px;
+  text-align: left;
+}
+x-modal {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: transparent;
+  backdrop-filter: blur(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+x-modal .modal {
+  max-width: 90%;
+  width: 500px;
+  padding: 1.8rem;
+  border-radius: 1.5rem;
+  background: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all 0.3s;
+}
+x-modal .modal p {
+  margin: 0 0 1rem 0;
+}
+x-modal .modal .modal-buttons {
+  width: 100%;
+  margin-top: 1rem;
+}
+x-modal .modal .modal-buttons button {
+  float: right;
+  -webkit-appearance: none;
+  display: block;
+  height: 2.5rem;
+  line-height: 1.5;
+  width: 150px;
+  font-size: 1rem;
+  background: #ffc71e;
+  color: #fff;
+  cursor: pointer;
+  border: 0.05rem solid #ffc71e;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.3s ease-in-out, opacity 0.15s ease-in-out;
+}
+x-modal .modal .modal-buttons button:hover {
+  border-color: #ffc71e;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(255, 199, 30, 0.75);
+}
+x-modal .modal .modal-buttons button:active {
+  opacity: 0.8;
+}
+x-modal .modal .modal-buttons button.btn-primary {
+  -webkit-appearance: none;
+  display: block;
+  height: 2.5rem;
+  line-height: 1.5;
+  width: 150px;
+  font-size: 1rem;
+  background: #69bcf3;
+  color: #fff;
+  cursor: pointer;
+  border: 0.05rem solid #69bcf3;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.3s ease-in-out, opacity 0.15s ease-in-out;
+}
+x-modal .modal .modal-buttons button.btn-primary:hover {
+  border-color: #69bcf3;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(105, 188, 243, 0.75);
+}
+x-modal .modal .modal-buttons button.btn-primary:active {
+  opacity: 0.8;
+}
+x-modal .modal .modal-buttons button.btn-negative {
+  -webkit-appearance: none;
+  display: block;
+  height: 2.5rem;
+  line-height: 1.5;
+  width: 150px;
+  font-size: 1rem;
+  background: #ff5050;
+  color: #fff;
+  cursor: pointer;
+  border: 0.05rem solid #ff5050;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, transform 0.3s ease-in-out, opacity 0.15s ease-in-out;
+}
+x-modal .modal .modal-buttons button.btn-negative:hover {
+  border-color: #ff5050;
+  outline: 0;
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem rgba(255, 80, 80, 0.75);
+}
+x-modal .modal .modal-buttons button.btn-negative:active {
+  opacity: 0.8;
+}
+x-modal[open] {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  opacity: 1;
+  pointer-events: auto;
+}
+x-modal[open] .modal {
+  opacity: 1;
+  top: 50%;
+}
+@font-face {
+  font-family: 'Molle';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Molle'), local('Molle-Regular'), url(https://fonts.gstatic.com/s/molle/v8/E21n_dL5hOXFhWEsXzg.ttf) format('truetype');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  min-height: 100vh;
+}
+.brand {
+  font-family: 'Molle', cursive;
+  color: #69bcf3;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  height: 150px;
+  width: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.brand svg {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: -1;
+  top: 7%;
+}
+.brand h1 {
+  position: absolute;
+  margin: 0;
+  bottom: 10%;
+}
+/*# sourceMappingURL=core.css.map */

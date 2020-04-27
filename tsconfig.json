@@ -5,10 +5,8 @@
 	},
 	"compilerOptions": {
 		"module": "commonjs",
-		"target": "ESNext",
+		"target": "ES2019",
 		"sourceMap": true,
-		"outDir": "/dist",
-		"rootDir": "/src",
 		"pretty": true,
 		"watch": true,
 		"declaration": true

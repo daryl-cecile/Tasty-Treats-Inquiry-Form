@@ -1,0 +1,45 @@
+@import "__form";
+@import "__layout";
+@import "__modal";
+@import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	min-height: 100vh;
+}
+
+.brand{
+	font-family: 'Molle', cursive;
+	color: #69bcf3;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	height: 150px;
+	width: 400px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+
+	svg{
+		position: absolute;
+		width: 100%;
+		height: 80px;
+		z-index: -1;
+		top:7%;
+	}
+
+	h1{
+		position: absolute;
+		margin:0;
+		bottom: 10%;
+	}
+
+}

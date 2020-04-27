@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('partial/libraries') %>
+    <%- include('partial/head') %>
+    <title><%= defaultPageTitle %></title>
+</head>
+<body>
+
+    <main class="centered wider">
+        <%- include('partial/brand') %>
+
+        <h2 class="title">Inquiries</h2>
+
+        <div style="overflow-x:auto;">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>From</th>
+                    <th>Address</th>
+                    <th>Message</th>
+                    <th>Subscribed</th>
+                </tr>
+                <% for (let row of inquiries){ %>
+                    <tr onclick="location.href='/admin/view/<%= row.id %>'">
+                        <td><%= row.id %></td>
+                        <td><%= row.userInfo.fullName %></td>
+                        <td><%= row.userInfo.emailAddress %></td>
+                        <td><%= row.message.substr(0, 30).trim() + "..." %></td>
+                        <td><%= row.isSubscribed ? "Yes" : "No" %></td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+
+        <br>
+    </main>
+
+    <footer>
+        Tasty Treats <%= (new Date()).getFullYear() %>
+    </footer>
+
+</body>
+</html>

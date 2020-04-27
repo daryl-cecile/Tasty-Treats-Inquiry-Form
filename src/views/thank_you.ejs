@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('partial/libraries') %>
+    <%- include('partial/head') %>
+    <title><%= defaultPageTitle %></title>
+</head>
+<body class="with-bg">
+
+    <main class="centered">
+        <%- include('partial/brand') %>
+
+        <h2 class="title">Thank you!</h2>
+
+        <p>Your message has been received. We will get back to you soon!</p>
+
+        <a href="/" style="float: right">Go Back</a>
+
+        <br>
+    </main>
+
+    <footer>
+        Tasty Treats <%= (new Date()).getFullYear() %>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import "__variables";
+@import "__mix";
+
+body{
+	font-size: 1rem;
+	line-height: 1.5;
+	padding:1px;
+	margin:0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+	min-height: 100vh;
+}
+
+main.centered{
+	max-width: 640px;
+	min-width: 350px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2rem 0;
+	min-height: 82vh;
+
+	&.wider{
+		max-width: 860px;
+	}
+
+	h2.title{
+		display: block;
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 1.2;
+		margin-bottom: 1.5rem;
+		word-wrap: break-word;
+	}
+
+}
+
+.t-center{
+	text-align: center;
+}
+
+footer{
+	color: @color-white;
+	background: gray;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+a{
+	color: @active-color;
+
+	&:not(.unstyled){
+		padding: 0.2rem 0.5rem;
+
+		.reactive-border-setup(transparent);
+
+		&:hover{
+			.reactive-border-color(@active-color);
+		}
+	}
+
+	&.unstyled{
+		text-decoration: none;
+	}
+}
+
+table.table{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+
+	tr{
+		&:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		&:hover {
+			background-color: #ddd;
+		}
+
+		td{
+			padding: 0 6px;
+		}
+
+		th{
+			background-color: @active-color;
+			color: white;
+			padding: 8px 6px;
+			text-align: left;
+		}
+	}
+}

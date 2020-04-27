@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('partial/libraries') %>
+    <%- include('partial/head') %>
+    <title><%= defaultPageTitle %></title>
+</head>
+<body>
+
+    <main class="centered wider">
+        <%- include('partial/brand') %>
+
+        <a href="/admin/view-submissions">Back</a>
+
+        <br>
+        <br>
+
+        <form class="ui-form">
+
+            <div class="form-input">
+                <label for="f-name">Full Name:</label>
+                <input type="text" id="f-name" readonly value="<%= inquiry.userInfo.fullName %>">
+            </div>
+
+            <div class="form-input">
+                <label for="f-email">Email:</label>
+                <input type="email" id="f-email" readonly value="<%= inquiry.userInfo.emailAddress %>">
+            </div>
+
+            <div class="form-input">
+                <label for="f-message">Message:</label>
+                <textarea id="f-message" readonly><%= inquiry.message %></textarea>
+            </div>
+
+            <div class="form-input">
+                <label><input type="checkbox" <%= inquiry.isSubscribed ? "checked" : "" %> disabled>Subscribe to Tasty Treats' newsletter?</label>
+            </div>
+
+        </form>
+
+        <br>
+    </main>
+
+    <footer>
+        Tasty Treats <%= (new Date()).getFullYear() %>
+    </footer>
+
+</body>
+</html>
